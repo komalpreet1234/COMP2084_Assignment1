@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NfXpBf7o10o9c3tWuTMz87z4WDj46HtNlIRoE4nQomy0XZdIl/Kjzy4TZ0DqCNxtHnDUJDg8UwKIcWrpBg427g==",
+  "dgSpecHash": "9PpyQCaeNC2S0dnffhu7yfSKvepdaW9ReEdyQywZC5qMK5gTEvwPyRh3HPB2KtoYqLkxYTGmVh/uKjLQlWzLOg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Komal JAWANDHA\\Desktop\\MovieApplication.Web\\MovieApplication.Web\\MovieApplication.Web\\MovieApplication.Web.csproj",
+  "projectFilePath": "C:\\Users\\Komal JAWANDHA\\Desktop\\ASP\\COMP2084_Assignment1\\MovieApplication.Web\\MovieApplication.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",

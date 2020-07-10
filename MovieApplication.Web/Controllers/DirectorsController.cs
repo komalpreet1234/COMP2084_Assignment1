@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ using MovieApplication.Web.Models;
 
 namespace MovieApplication.Web.Controllers
 {
+    [Authorize(Roles ="Administrator")]
     public class DirectorsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -20,12 +22,14 @@ namespace MovieApplication.Web.Controllers
         }
 
         // GET: Directors
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Directors.ToListAsync());
         }
 
         // GET: Directors/Details/5
+        [Authorize]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -44,6 +48,7 @@ namespace MovieApplication.Web.Controllers
         }
 
         // GET: Directors/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -54,6 +59,7 @@ namespace MovieApplication.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Create([Bind("DirectorId,DirectorName")] Director director)
         {
             if (ModelState.IsValid)
@@ -66,6 +72,7 @@ namespace MovieApplication.Web.Controllers
         }
 
         // GET: Directors/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -86,6 +93,7 @@ namespace MovieApplication.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Edit(int id, [Bind("DirectorId,DirectorName")] Director director)
         {
             if (id != director.DirectorId)
@@ -117,6 +125,7 @@ namespace MovieApplication.Web.Controllers
         }
 
         // GET: Directors/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -137,6 +146,7 @@ namespace MovieApplication.Web.Controllers
         // POST: Directors/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var director = await _context.Directors.FindAsync(id);

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Komal JAWANDHA\\Desktop\\MovieApplication.Web\\MovieApplication.Web\\MovieApplication.Web\\MovieApplication.Web.csproj": {}
+    "C:\\Users\\Komal JAWANDHA\\Desktop\\ASP\\COMP2084_Assignment1\\MovieApplication.Web\\MovieApplication.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Komal JAWANDHA\\Desktop\\MovieApplication.Web\\MovieApplication.Web\\MovieApplication.Web\\MovieApplication.Web.csproj": {
+    "C:\\Users\\Komal JAWANDHA\\Desktop\\ASP\\COMP2084_Assignment1\\MovieApplication.Web\\MovieApplication.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Komal JAWANDHA\\Desktop\\MovieApplication.Web\\MovieApplication.Web\\MovieApplication.Web\\MovieApplication.Web.csproj",
+        "projectUniqueName": "C:\\Users\\Komal JAWANDHA\\Desktop\\ASP\\COMP2084_Assignment1\\MovieApplication.Web\\MovieApplication.Web.csproj",
         "projectName": "MovieApplication.Web",
-        "projectPath": "C:\\Users\\Komal JAWANDHA\\Desktop\\MovieApplication.Web\\MovieApplication.Web\\MovieApplication.Web\\MovieApplication.Web.csproj",
+        "projectPath": "C:\\Users\\Komal JAWANDHA\\Desktop\\ASP\\COMP2084_Assignment1\\MovieApplication.Web\\MovieApplication.Web.csproj",
         "packagesPath": "C:\\Users\\Komal JAWANDHA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Komal JAWANDHA\\Desktop\\MovieApplication.Web\\MovieApplication.Web\\MovieApplication.Web\\obj\\",
+        "outputPath": "C:\\Users\\Komal JAWANDHA\\Desktop\\ASP\\COMP2084_Assignment1\\MovieApplication.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
